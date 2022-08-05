@@ -66,7 +66,7 @@ const web3Onboard = init({
   appMetadata: {
     name: 'Bootbay',
     icon: `${process.env.PUBLIC_URL}/boot-bay-assets/NFT_82x82.png`,
-    description: 'Bootbay nft minting app',
+    description: 'Bootbay nft minting application for mobile',
     recommendedInjectedWallets: [
       { name: 'MetaMask', url: 'https://metamask.io' },
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' }
