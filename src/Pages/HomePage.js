@@ -10,7 +10,6 @@ import "./Slider.css";
 import Slider from "../Components/Slider";
 import moment from "moment";
 import injectedModule from '@web3-onboard/injected-wallets'
-import Logoicon from './logo192.png'
 import {
   init,
   useConnectWallet,
@@ -66,8 +65,7 @@ const web3Onboard = init({
   ],
   appMetadata: {
     name: 'Bootbay',
-    icon: {Logoicon},
-    description: 'Bootbay nft minting application for mobile',
+    description: 'Bootbay nft minting app',
     recommendedInjectedWallets: [
       { name: 'MetaMask', url: 'https://metamask.io' },
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' }
