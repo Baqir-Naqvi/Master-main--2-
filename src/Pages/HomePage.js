@@ -10,7 +10,7 @@ import "./Slider.css";
 import Slider from "../Components/Slider";
 import moment from "moment";
 import injectedModule from '@web3-onboard/injected-wallets'
-import Logoicon from '../../public/logo192.png'
+import Logoicon from './logo192.png'
 import {
   init,
   useConnectWallet,
