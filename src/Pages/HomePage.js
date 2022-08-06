@@ -65,7 +65,7 @@ const web3Onboard = init({
   ],
   appMetadata: {
     name: 'Bootbay',
-    icon:"./logo192.png",
+    icon: "./check.png",
     description: 'Bootbay nft minting app',
     recommendedInjectedWallets: [
       { name: 'MetaMask', url: 'https://metamask.io' },
@@ -139,7 +139,7 @@ function HomePage() {
           setisTransaction(false);
         } else {
           await Contract.methods
-            .mint(parseInt(Counter))
+            .mintBuy(parseInt(Counter))
             .send({
               from: store.getState().ConnectivityReducer.metamaskAddress,
               value: web3.utils.toWei(`${Counter * price}`, "ether"),
@@ -173,10 +173,10 @@ function HomePage() {
           <div className=" flex-1 flex items-center h-screen py-[50px]">
             <div className="relative rounded flex flex-col md:justify-center md:flex-1 w-full md:max-w-4xl mx-auto h-full">
               <div className=" text-white text-xl text-center font-semibold ">
-                <div className=" text-white text-xl text-center font-semibold dark-box">
+                <div className=" text-white text-xl text-center font-semibold ">
                   Special Price for Discord Members
                 </div>
-                <div className=" text-white text-base text-center font-semibold dark-box">
+                <div className=" text-white text-base text-center font-semibold ">
                   {moment(new Date(EST).getTime())
                     .format("MMM D - hh:mm a")
                     .toString()
@@ -184,26 +184,26 @@ function HomePage() {
                   EST
                 </div>
               </div>
-              <div className="px-2 my-[25px] text-white text-xl text-center flex justify-between font-semibold info-wrap">
+              <div className="px-2 my-[25px] text-white text-xl text-center flex justify-between font-semibold">
                 <div>
-                  <div className="dark-box">Supply</div>
-                  <div className="dark-box">{supply}</div>
+                  <div>Supply</div>
+                  <div>{supply}</div>
                 </div>
                 <div>
-                  <div className="dark-box">Price</div>
-                  <div className="dark-box">{price}&nbsp;ETH</div>
+                  <div>Price</div>
+                  <div>{price}&nbsp;ETH</div>
                 </div>
                 <div>
-                  <div className="dark-box">MAX</div>
-                  <div className="dark-box">{maxNFT} PER WALLET</div>
+                  <div>MAX</div>
+                  <div>{maxNFT} PER WALLET</div>
                 </div>
               </div>
               <div className="opacity-100 ">
                 <div className=" rounded-[15px] overflow-y-auto h-full opacity-100 mx-auto">
                   <div className=" rounded-md max-w-[520px] mx-auto w-full h-full bg-[#0b0b08cc] p-[32px]">
-                    <div className=" w-full bonus-form">
+                    <div className=" w-full">
                       {" "}
-                      <div className="text-white font-bold text-[40px] py-4 bonus-form-title">
+                      <div className="text-white font-bold text-[40px] py-4">
                         BONUS SALE
                       </div>
                       {/* NFT Block */}
@@ -214,7 +214,7 @@ function HomePage() {
                             className="rounded-md"
                             src={
                               process.env.PUBLIC_URL +
-                              "boot-bay-assets/NFT_82x82.gif"
+                              "boot-bay-assets/NFT_82x82.png"
                             }
                           ></img>
                         </div>
