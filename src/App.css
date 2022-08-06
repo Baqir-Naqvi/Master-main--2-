@@ -40,3 +40,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*css for adding background -- by ojasya*/
+
+.dark-box{
+    background-color: rgba(11,11 ,8,0.8);
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.info-wrap>div{
+  padding-right: 10px;
+}
+
+.justify-between .dark-box{
+  font-size: 17px;
+}
+
+.bonus-form .bonus-form-title.py-4{
+  padding-top: 0;
+  line-height: 1.2;
+}

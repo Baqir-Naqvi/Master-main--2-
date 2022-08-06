@@ -54,16 +54,6 @@ function Slider() {
             width="400px"
           />
         </div>
-        <div class="item max-w-[400px]">
-          <img
-            alt=""
-            src={
-              process.env.PUBLIC_URL +
-              "boot-bay-assets/slide/slide6_460x460.png"
-            }
-            width="400px"
-          />
-        </div>
       </div>
     </>
   );

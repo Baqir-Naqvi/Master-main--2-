@@ -44,7 +44,7 @@ export async function ConnectWallet() {
 //   ],
 //   appMetadata: {
 //     name: "My App",
-//     icon: `${process.env.PUBLIC_URL}/boot-bay-assets/NFT_82x82.png`,
+//     icon: `${process.env.PUBLIC_URL}/boot-bay-assets/NFT_82x82.gif`,
 //     description: "My app using Onboard",
 //   },
 // });
